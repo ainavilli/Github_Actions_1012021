@@ -44,4 +44,12 @@ jobs:
           dotnet build 'Github_1012021.sln'
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
           
+          #Add msbuild to PATH
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v1.0.2
+  
+     #To build dotnet application using MSBuild
+      - name: Build
+        run: msbuild ./Github_1012021.sln
+          
          
