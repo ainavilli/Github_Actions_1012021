@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+	<IsPackable>true</IsPackable>
+	<RepositoryUrl>https://github.com/ainavilli/Github_Actions_1012021</RepositoryUrl>
+	  <GenerateProgramFile>false</GenerateProgramFile>
+	  
+  
   </PropertyGroup>
 
 </Project>
